@@ -1,44 +1,56 @@
 <p>
-    <i>( Describe task in general )</i>
+    Deoxyribonucleic acid is a molecule that encodes
+    the genetic instructions used in the development and functioning of all known living organisms and many viruses.
+    A DNA molecule consists of two strands that wrap around each other to resemble a twisted ladder whose sides, made of
+    sugar and phosphate molecules, are connected by rungs of nitrogen-containing chemicals called bases.
+    Each strand is a linear arrangement of repeating similar units called nucleotides.
+    Each nucleotide is composed of a nitrogen-containing nucleobase—either
+    guanine (G), adenine (A), thymine (T), or cytosine (C).
+    The particular order of the bases arranged along the sugar-phosphate backbone is called the DNA
+    sequence; the sequence specifies the exact genetic instructions required to create a particular organism with its
+    own unique traits.
+</p>
+<p>
+        We want compare DNA strands and find the longest common base sequence in the two
+    strands. These strands can be represented as strings consisting of the letters "ACGT".
+    For example the longest common sequence for strands "ACGTC" and "TTCGT" is "CGT".
 </p>
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
+    You are given two strand descriptions and you should find the longest common sequence.
+    If we have several various longest sequences with the same length, then return them as
+    a string where these sequence are written in <strong>lexicographical order</strong> separated by commas.
+    For example, for "CGCTA" and "TACCG" we found two sequnces "CG" and "TA", so the result is
+    "CG,TA". If the given sequences don't have a common sequence then return an empty string.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Input: </strong> Two arguments. Base sequences as strings.
 </p>
 
+<p>
+    <strong>Output: </strong> The common longest sequence or sequences as a string.
+</p>
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
+    <textarea data-code="python">
+common("ACGTC", "TTCGT") == "CGT"
+common("CGCTA", "TACCG") == "CG,TA"
+common("GCTT", "AAAAA") == ""
+    </textarea>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    Bioinformatic scientists are using programm skills to examine DNA sequences.
+    With this concept you can create an useful tool for this.
 </p>
 
 <p>
-    <strong>Precondition:</strong>
-    <i>Constraints for Input</i>
+    <strong>Precondition:</strong><br>
+     all(0 &lt; len(seq) &le; 1000 and all(x in "ACGT" for x in seq) for seq in args)
 </p>
