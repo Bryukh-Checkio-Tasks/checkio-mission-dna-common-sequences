@@ -11,16 +11,19 @@
     own unique traits.
 </p>
 <p>
-        We want compare DNA strands and find the longest common base sequence in the two
-    strands. These strands can be represented as strings consisting of the letters "ACGT".
-    For example the longest common sequence for strands "ACGTC" and "TTCGT" is "CGT".
+    We want compare DNA strands and find the longest common base subsequence in the two
+    strands.
+    <strong>Subsequences are not required to occupy consecutive
+        positions within the original sequences and letters can be placed in various distances between other.</strong>
+    These strands can be represented as strings consisting of the letters "ACGT".
+    For example the longest common sequence for strands "ACGTC" and "TTACTC" is "ACTC".
 </p>
 
 <p>
-    You are given two strand descriptions and you should find the longest common sequence.
+    You are given two strand descriptions and you should find the longest common subsequence (not substring).
     If we have several various longest sequences with the same length, then return them as
     a string where these sequence are written in <strong>lexicographical order</strong> separated by commas.
-    For example, for "CGCTA" and "TACCG" we found two sequnces "CG" and "TA", so the result is
+    For example, for "CGCTA" and "TACCG" we found two sequences "CG" and "TA", so the result is
     "CG,TA". If the given sequences don't have a common sequence then return an empty string.
 </p>
 
@@ -38,7 +41,7 @@
         <strong>Example:</strong>
     </p>
     <textarea data-code="python">
-common("ACGTC", "TTCGT") == "CGT"
+common("ACGTC", "TTACTC") == "ACTC"
 common("CGCTA", "TACCG") == "CG,TA"
 common("GCTT", "AAAAA") == ""
     </textarea>
@@ -52,5 +55,5 @@ common("GCTT", "AAAAA") == ""
 
 <p>
     <strong>Precondition:</strong><br>
-     all(0 &lt; len(seq) &le; 1000 and all(x in "ACGT" for x in seq) for seq in args)
+    all(0 &lt; len(seq) &le; 1000 and all(x in "ACGT" for x in seq) for seq in args)
 </p>

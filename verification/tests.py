@@ -7,19 +7,20 @@ Each test is dict with
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
 
-
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": ["ACGTC", "TTCGT"],
+            "answer": "CGT",
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": ["CGCTA", "TACCG"],
+            "answer": "CG,TA",
+        },
+        {
+            "input": ["GCTT", "AAAAA"],
+            "answer": "",
+        },
     ],
     "Extra": [
         {
