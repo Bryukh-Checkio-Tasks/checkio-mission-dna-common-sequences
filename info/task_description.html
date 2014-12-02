@@ -11,20 +11,22 @@
     own unique traits.
 </p>
 <p>
-    We want compare DNA strands and find the longest common base subsequence in the two
-    strands.
-    <strong>Subsequences are not required to occupy consecutive
-        positions within the original sequences and letters can be placed in various distances between other.</strong>
-    These strands can be represented as strings consisting of the letters "ACGT".
-    For example the longest common sequence for strands "ACGTC" and "TTACTC" is "ACTC".
+    For this mission, we want to compare DNA strands and find the longest common base subsequence in the two strands.
+    <strong>Subsequences are not required to occupy consecutive positions within the original sequences and letters can
+        be
+        placed at varying distances between each other.</strong> These strands can be represented as strings consisting
+    of the
+    letters "ACGT". For example the longest common sequence for strands "ACGTC" and "TTACTC" is "ACTC".
+
 </p>
 
 <p>
-    You are given two strand descriptions and you should find the longest common subsequence (not substring).
-    If we have several various longest sequences with the same length, then return them as
-    a string where these sequence are written in <strong>lexicographical order</strong> separated by commas.
-    For example, for "CGCTA" and "TACCG" we found two sequences "CG" and "TA", so the result is
-    "CG,TA". If the given sequences don't have a common sequence then return an empty string.
+    You are given two strand descriptions and you should find the longest common subsequence (not the substring). If we
+    find several “longest” sequences with equal length, then return each of them as a string where these sequence are
+    written in <strong>lexicographical order</strong> separated by commas. For example, for "CGCTA" and "TACCG" we found
+    two sequences
+    "CG" and "TA", so the result is "CG,TA". If the given sequences don't have a common sequence then return an empty
+    string.
 </p>
 
 <p>
@@ -43,14 +45,13 @@
     <textarea data-code="python">
 common("ACGTC", "TTACTC") == "ACTC"
 common("CGCTA", "TACCG") == "CG,TA"
-common("GCTT", "AAAAA") == ""
-    </textarea>
+common("GCTT", "AAAAA") == ""</textarea>
 </div>
-
+<br>
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    Bioinformatic scientists are using programm skills to examine DNA sequences.
-    With this concept you can create an useful tool for this.
+    Bioinformatic scientists often use programming skills to model and examine DNA sequences in a lab. With the concepts
+    from this mission, you can create the foundation of such a tool.
 </p>
 
 <p>
