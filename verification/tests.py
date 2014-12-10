@@ -49,7 +49,7 @@ TESTS = {
         },
         {
             "input": ('CCCATTCACGT', 'TGGCGACCGGGATCGTACTT'),
-            "answer": "CCCATCACT",
+            "answer": "CCCATCACT,CCCATTACT"
         },
         {
             "input": ('CATATGTGTACTGC', 'GCCGACCGCTGTCATTAATATACAGTTCGAA'),
