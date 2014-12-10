@@ -56,5 +56,5 @@ common("GCTT", "AAAAA") == ""</textarea>
 
 <p>
     <strong>Precondition:</strong><br>
-    all(0 &lt; len(seq) &le; 1000 and all(x in "ACGT" for x in seq) for seq in args)
+    all(0 &lt; len(seq) &le; 64 and all(x in "ACGT" for x in seq) for seq in args)
 </p>
